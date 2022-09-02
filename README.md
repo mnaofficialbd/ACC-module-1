@@ -2,6 +2,6 @@
 #### Topic:
 - ``
 - `Promise`
-- `async await function`
-- ``
+- `Async Await function`
+- `Async Await Errors handler`
 - ``
