@@ -17,10 +17,14 @@ const userIds = [1, 2, 3, 4, 5];
 let userData = [];
 for (let i = 0; i < userIds.length; i++) {
     const userId = userIds[i];
-    myPromise.then(user=>{
-        userData.push(user)
-    })
+    userData.push(myPromise)
 }
+
+Promise.all(userData).then(res=>{
+    console.log('Data from Pomise.all',res);
+})
+
+// console.log(userData);
 
 myPromise
     .then(res => console.log(res))
